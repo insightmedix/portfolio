@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Projects Portfolio</title>
+    <style>
+        :root {
+            --background-dark: #121212;
+            --card-background: #1e1e1e;
+            --text-primary: #ffffff;
+            --text-secondary: #b3b3b3;
+            --accent-purple: #b967ff;
+            --accent-purple-light: #d9b3ff;
+            --accent-purple-dark: #8a2be2;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--accent-purple);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-purple-light);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+        
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--accent-purple);
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: var(--accent-purple-light);
+        }
+        
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.75rem;
+            background-color: var(--accent-purple-dark);
+            color: white;
+            border-radius: 20px;
+        }
+        
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-link {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background-color: var(--accent-purple);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .project-link:hover {
+            background-color: var(--accent-purple-dark);
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web Development Portfolio</h1>
+            <p class="subtitle">Showcasing my web development projects</p>
+        </header>
+        
+        <div class="intro">
+            <p>Welcome to my web development portfolio. Below, you can find a selection of projects that highlight my skills in building responsive websites and applications. Each project utilizes modern web technologies like HTML, CSS, JavaScript, and more.</p>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1: NCLEX Prep Schedule -->
+            <div class="project-card">
+                <img src="nclex-schedule-image.jpg" alt="NCLEX Prep Schedule" class="project-image">
+                <div class="project-content">
+                    <h2 class="project-title">NCLEX Prep Schedule</h2>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <p class="project-description">A simple yet effective web-based tool to help students plan and track their NCLEX exam preparation schedule.</p>
+                    <a href="https://insightmedix.github.io/nclex-prep/" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            
+            <!-- Add other projects here -->
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="project2-image.jpg" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h2 class="project-title">Project 2 Title</h2>
+                    <div class="project-tags">
+                        <span class="tag">Technology</span>
+                        <span class="tag">Framework</span>
+                    </div>
+                    <p class="project-description">Brief description of the project. Explain what it does and its main features.</p>
+                    <a href="https://link-to-project" class="project-link" target="_blank">View Project</a>
+                </div>
+            </div>
+            
+            <!-- To Add more projects -->
+        </div>
+    </div>
+</body>
+</html>
